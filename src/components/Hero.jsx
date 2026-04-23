@@ -151,11 +151,8 @@ function Hero() {
             <div className="hero-image">
               <div className="profile-image">
                 <img 
-                  src="1.jpeg" 
+                  src="/1.jpeg" 
                   alt="Profile"
-                  onError={(e) => {
-                    e.target.src = 'https://randomuser.me/api/portraits/women/68.jpg';
-                  }}
                 />
                 <div className="profile-badge">
                   <span>✨ Available for work</span>
