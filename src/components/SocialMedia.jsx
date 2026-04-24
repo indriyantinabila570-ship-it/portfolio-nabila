@@ -9,10 +9,18 @@ const skills = [
   { name: 'PHP', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg' },
 ];
 
+const tools = [
+  { name: 'Figma', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg' },
+  { name: 'GitHub', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg' },
+];
+
 function Skills() {
   return (
     <section id="skills" className="container">
-      <h2 className="section-title">Skills & Technologies</h2>
+      <h2 className="section-title">Skills & Tools</h2>
+
+      {/* ✅ Skills */}
+      <h3 className="sub-title">Skills</h3>
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div key={index} className="skill-card">
@@ -21,6 +29,18 @@ function Skills() {
           </div>
         ))}
       </div>
+
+      {/* ✅ Tools */}
+      <h3 className="sub-title">Tools</h3>
+      <div className="skills-grid">
+        {tools.map((tool, index) => (
+          <div key={index} className="skill-card">
+            <img src={tool.icon} alt={tool.name} />
+            <p>{tool.name}</p>
+          </div>
+        ))}
+      </div>
+
     </section>
   );
 }

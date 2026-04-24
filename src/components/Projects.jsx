@@ -1,39 +1,80 @@
+// projects.jsx
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const projects = [
   {
-    title: 'Finance App Redesign',
-    description: 'Complete UI/UX overhaul for a mobile banking application, improving user engagement by 40%.',
-    tags: ['UI Design', 'UX Research', 'Prototyping']
+    title: 'GALERI PRESTASI · THREE PEAT',
+    description: 'Sebuah website yang menunjukkan prestasi seorang siswi',
+    tags: ['Kementerian Besi', 'Data Indonesia 2024', 'OSN Krim (Medal Game)'],
+    image: '/api/placeholder/400/200',
+    link: '#'
   },
   {
-    title: 'E-commerce Platform',
-    description: 'Product design for a sustainable fashion marketplace with focus on seamless checkout experience.',
-    tags: ['Product Design', 'User Flow', 'Responsive']
+    title: 'MoneyPath',
+    description: 'Website keuangan yang saya kembangkan bersama dengan tim saya',
+    tags: ['Finance', 'Team Project', 'Web Development'],
+    image: '/api/placeholder/400/200',
+    link: '#'
   },
   {
-    title: 'Health Dashboard',
-    description: 'Designing a responsive dashboard for healthcare providers to monitor patient data efficiently.',
-    tags: ['Dashboard', 'Data Visualization', 'Accessibility']
+    title: 'ps Victory',
+    description: 'Platform pembelajaran dan pengembangan diri',
+    tags: ['Education', 'E-Learning', 'Interactive'],
+    image: '/api/placeholder/400/200',
+    link: '#'
+  },
+  {
+    title: 'Indonesian Culture',
+    description: 'Pelestarian dan pengenalan budaya Indonesia melalui digital',
+    tags: ['Culture', 'Heritage', 'Digital Archive'],
+    image: '/api/placeholder/400/200',
+    link: '#'
   }
 ];
 
 function Projects() {
+  const openProject = (link) => {
+    if (link && link !== '#') {
+      window.open(link, '_blank');
+    }
+  };
+
   return (
     <section id="projects" className="container">
-      <h2 className="section-title">Featured Projects</h2>
+      <h2 className="section-title">Projects</h2>
+
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <div className="highlight-tags">
-              {project.tags.map((tag, i) => (
-                <span key={i}>{tag}</span>
-              ))}
+
+            {/* Gambar dengan efek overlay */}
+            <div className="project-image">
+              <img 
+                src={project.image || "/placeholder.png"} 
+                alt={project.title} 
+              />
+              <div className="image-overlay"></div>
             </div>
-            <Link to="/contact" className="highlight-link">View Case Study →</Link>
+
+            {/* Content */}
+            <div className="project-content">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+
+              <div className="highlight-tags">
+                {project.tags.map((tag, i) => (
+                  <span key={i}>{tag}</span>
+                ))}
+              </div>
+
+              <button 
+                onClick={() => openProject(project.link)} 
+                className="project-link"
+              >
+                View Project →
+              </button>
+            </div>
+
           </div>
         ))}
       </div>

@@ -154,37 +154,8 @@ function Hero() {
                   src="/1.jpeg" 
                   alt="Profile"
                 />
-                <div className="profile-badge">
-                  <span>✨ Available for work</span>
-                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Highlight Proyek Section */}
-      <section className="highlight-projects container-full">
-        <h2 className="section-title">Featured Highlights</h2>
-        <p className="section-subtitle">My best work that showcases my design expertise</p>
-        <div className="highlights-grid">
-          <div className="highlight-card">
-            <div className="highlight-icon">📱</div>
-            <h3>Finance App Redesign</h3>
-            <p>Complete UI/UX overhaul for mobile banking</p>
-            <Link to="/contact" className="highlight-link">Let's Collaborate →</Link>
-          </div>
-          <div className="highlight-card">
-            <div className="highlight-icon">🛍️</div>
-            <h3>Sustainable E-commerce</h3>
-            <p>Eco-friendly shopping platform design</p>
-            <Link to="/contact" className="highlight-link">Let's Collaborate →</Link>
-          </div>
-          <div className="highlight-card">
-            <div className="highlight-icon">📊</div>
-            <h3>Healthcare Dashboard</h3>
-            <p>Patient data monitoring dashboard</p>
-            <Link to="/contact" className="highlight-link">Let's Collaborate →</Link>
           </div>
         </div>
       </section>
