@@ -3,35 +3,27 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'GALERI PRESTASI · THREE PEAT',
+    title: 'SmartPlanner',
     description: 'Sebuah website yang menunjukkan prestasi seorang siswi',
-    tags: ['Kementerian Besi', 'Data Indonesia 2024', 'OSN Krim (Medal Game)'],
-    image: '/api/placeholder/400/200',
-    link: '#'
+    tags: ['Productivity', 'Task Management', 'Daily Planner'],
+    image: '41.jpeg', // atau pakai screenshot/thumbnail project
+    link: 'https://daily-planne-app.vercel.app/' // ✅ Ganti dengan URL hosting asli
   },
   {
     title: 'MoneyPath',
     description: 'Website keuangan yang saya kembangkan bersama dengan tim saya',
     tags: ['Finance', 'Team Project', 'Web Development'],
-    image: '/api/placeholder/400/200',
-    link: '#'
+    image: '71.jpeg',
+    link: 'https://moneypath-7777.firebaseapp.com/' // ✅ Ganti dengan URL hosting asli
   },
   {
-    title: 'ps Victory',
-    description: 'Platform pembelajaran dan pengembangan diri',
-    tags: ['Education', 'E-Learning', 'Interactive'],
-    image: '/api/placeholder/400/200',
-    link: '#'
+    title: 'healthy-lifestyle',
+    description: 'Sebuah website yang menunjukkan prestasi seorang siswi',
+    tags: ['Wellness App', 'Healthy Living', 'Fitness & Nutrition'],
+    image: '42.jpeg', // atau pakai screenshot/thumbnail project
+    link: 'https://healthy-lifestyle-app.vercel.app/' // ✅ Ganti dengan URL hosting asli
   },
-  {
-    title: 'Indonesian Culture',
-    description: 'Pelestarian dan pengenalan budaya Indonesia melalui digital',
-    tags: ['Culture', 'Heritage', 'Digital Archive'],
-    image: '/api/placeholder/400/200',
-    link: '#'
-  }
 ];
-
 function Projects() {
   const openProject = (link) => {
     if (link && link !== '#') {
