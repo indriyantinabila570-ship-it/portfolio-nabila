@@ -2,7 +2,7 @@ import React from 'react';
 
 function Contact() {
   // Ganti dengan alamat rumah Anda
-  const address = "Gg. bah iting, RT01/RW04, KP.Bojong Sari, Kec.ciomas,Kab.bogor";
+  const address = "Jl.Ciomas Permai, RT01/RW04, No.20, KP.Bojong Sari, Kec.ciomas,Kab.bogor";
   
   // Koordinat contoh (Jakarta) - Ganti dengan koordinat rumah Anda
   const latitude = -6.2088;
