@@ -18,7 +18,7 @@ const projects = [
   },
   {
     title: 'healthy-lifestyle',
-    description: 'Sebuah website yang menunjukkan prestasi seorang siswi',
+    description: 'Sebuah Website healthy lifestyle untuk membantu pengguna menerapkan pola hidup sehat.',
     tags: ['Wellness App', 'Healthy Living', 'Fitness & Nutrition'],
     image: '42.jpeg', // atau pakai screenshot/thumbnail project
     link: 'https://healthy-lifestyle-app.vercel.app/' // ✅ Ganti dengan URL hosting asli
